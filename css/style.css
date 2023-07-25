@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.presentation-video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.presentation-video video{
+    filter: brightness(35%);
+}
+/*
+.text-image-p{
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+*/
+.presentation{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.text-image-p{
+}
+.text-image-p h1{
+    color: #FFFFFF;
+    font-size: 96px;
+    font-weight: 500;
+}
+.text-image-p h1 .ape{
+    color: #36B7EE;
+}
+.text-image-p .subtitle-developer{
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 200;
+    
+}
+.text-image-p .btn-cv, .text-image-p .btn-linkin{
+    padding: 0px 25px;
+    height: 59px;
+    font-size: 30px;
+}
+.text-image-p .btn-cv{
+    background-color: #36B7EE;
+    color: white;
+}
+.text-image-p .btn-cv:active{
+    background-color: #38bbf4;
+}
+.text-image-p .btn-linkin{
+    border-color: #36B7EE;
+    color: #36B7EE;
+}
