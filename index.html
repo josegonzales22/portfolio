@@ -10,32 +10,54 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style2.css">
     <title>José Gonzales | Portfolio</title>
 </head>
-<body class="bg-secondary">
+<body>
     <!--
         ====================================
         BARRA DE NAVEGACIÓN
         ====================================
     -->
-    <nav class="col-lg-12 col-md-12 bg-primary p-2 fs-1">
-        Barra de navegación
+    <nav class="col-lg-12 col-md-12 fs-1">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Jose<span class="ape">g</span></label>
+        <ul>
+          <li><a class="active" href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
     <!--
         ====================================
         Pantalla principal
         ====================================
     -->
-    <div class="container mb-3">
-        <div class="row g-2 p-3 align-items-center">
-            <div class="col-lg-6 col-md-12">
-                <div class="pt-3 pb-3 bg-success text-center">
-                    Nombres y apellidos
+    <div class="container presentacion">
+        <video class="fillWidth visible-lg" preoload autoplay muted loop>
+            <source src="https://splendorous-shortbread-b59801.netlify.app/assets/mp4/background-video.mp4?autoplay=1" type="video/mp4">
+            Tu navegador no soporta la etiqueta HTML5 video.
+        </video>
+        <div class="row g-2 p-3 align-items-center contenido">
+            <div class="col-lg-6 col-md-12 ">
+                <div class="pt-3 pb-3 text-center izq">
+                    <h1>José <br><span class="ape">Gonzales</span></h1>
+                    <br><span class="desarrollador">Desarrollador</span>
+                    <br>
+                    <button class="btn rounded-pill btn-cv"><i class="fa-solid fa-file-pdf" style="color: #ffffff;"></i> Ver CV</button>
+                    <button class="btn rounded-pill btn-linkin"><i class="fa-brands fa-linkedin-in" style="color: #36b7ee;"></i> Linkedin</button>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="pt-3 pb-3 bg-danger text-center">
-                    Imágen
+            <div class="col-lg-6 col-md-12 der">
+                <div class="pt-3 pb-3">
+                    <lottie-player class="animation1" src="https://lottie.host/6d8f928c-ea85-4586-b013-416486e755f4/KYCt8SVA64.json" background="transparent" 
+                    speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
         </div>
