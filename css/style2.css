@@ -18,6 +18,10 @@ body {
     background-color: var(--PCOscuro);
     color: var(--PCBlanco);
 }
+h2{
+    font-weight: 400;
+    font-size: 40px;
+}
 /*
     ===========================
     BARRA DE NAVEGACIÓN
@@ -137,9 +141,51 @@ a.active,a:hover{
 .sobre-mi .izq a{
     text-decoration: none;
 }
+.sobre-mi .izq .animation2{
+    width: 90%;
+}
 .sobre-mi .der{
     font-weight: 400;
+    font-size: 35px;
+}
+/*
+    ===========================
+    EDUCACIÓN
+    ===========================
+*/
+.edu1, .edu2{
+    background-color: var(--SCOscuro);
+    box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
+}
+.edu1 .img-upn img,
+.edu2 .img-upc img{
+    width: 150px;
+    height: 30vh;
+}
+.edu1 .img-upn img,
+.edu2 .img-upc img{
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.35) inset;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.50) inset, -10px 10px 4px 0px rgba(0, 0, 0, 0.30);
+}
+.edu1 .img-upn img{
+    background-color: #FDBA30;
+}
+.edu2 .img-upc img{
+    filter: lightgray 50%;
+}
+.fecha-educacion{
+    border-radius: 15px;
+    padding: 6px 20px;
+    background: var(--SCCeleste);
     font-size: 30px;
+}
+.tema-educacion{
+    font-weight: 400;
+    font-size: 35px;
+}
+.dato-educacion{
+    font-weight: 200;
+    font-size: 25px;
 }
 @media (max-width: 952px){
     label.logo{
