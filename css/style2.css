@@ -21,6 +21,7 @@ body {
 h2{
     font-weight: 400;
     font-size: 40px;
+    color: var(--PCCeleste);
 }
 /*
     ===========================
@@ -153,7 +154,7 @@ a.active,a:hover{
     EDUCACIÓN
     ===========================
 */
-.edu1, .edu2{
+.contenedor-largo{
     background-color: var(--SCOscuro);
     box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
 }
@@ -163,7 +164,8 @@ a.active,a:hover{
     height: 30vh;
 }
 .edu1 .img-upn img,
-.edu2 .img-upc img{
+.edu2 .img-upc img,
+.contenedor-largo img{
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.35) inset;
     box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.50) inset, -10px 10px 4px 0px rgba(0, 0, 0, 0.30);
 }
@@ -187,6 +189,12 @@ a.active,a:hover{
     font-weight: 200;
     font-size: 25px;
 }
+/*
+    ===========================
+    HABILIDADES
+    ===========================
+*/
+
 @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -236,5 +244,16 @@ a.active,a:hover{
     */
     .animation1{
         display: none;
+    }
+
+    .fecha-educacion{
+        padding: 6px 10px;
+        font-size: 4vw;
+    }
+    .tema-educacion{
+        font-size: 5.5vw;
+    }
+    .dato-educacion{
+        font-size: 4.5vw;
     }
 }
