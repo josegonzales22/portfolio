@@ -6,6 +6,65 @@ body {
     background-color: #222222;
     color: #DADCDD;
 }
+/*
+===================
+Barra de navegación
+===================
+*/
+nav{
+    background: rgba(0, 0, 0, 0.75);
+    display: block;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    padding-left: 50px;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    /*padding: 0 100px;*/
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    /*padding: 7px 13px;*/
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    color: #36b7ee;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*
+===================
+Presentación
+===================
+*/
 .presentation-video{
     position: fixed;
     min-width: 100%;
@@ -25,16 +84,14 @@ body {
     width: auto;
     height: 100vh;
 }
-
-.cont-pres-izq, .cont-pres-der{
-    padding: 0px 10vw;
+.cont-pres-text .row{
+    margin: 0px 35px;
 }
-
 .cont-pres-izq h1{
     font-weight: 500;
     font-size: 65px;
 }
-.cont-pres-izq h1 .ape{
+.ape{
     color: #36b7ee;
 }
 .cont-pres-izq .desarrollador{
@@ -56,13 +113,65 @@ body {
     border-color: #36b7ee;
     color: #36b7ee;
 }
-.cont-pres-text .cont-pres-izq .animation1{
-    width: 100%;
+.animation1{
+    width: 50vw;
+    z-index: 0;
 }
 .cont-acerca-mi{
     background-color: #222222;
+    padding: 100px 50px;
 }
-@media screen and (max-width: 780px) {
+.animation2{
+    width: 25vw;
+    z-index: 0;
+}
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+/*
+===================
+Navegación
+===================
+*/
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.75);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+/*
+===================
+Presentación
+===================
+*/
     .animation1{
         display: none;
     }
@@ -79,7 +188,7 @@ body {
         margin: 20px auto;
         width: 90%;
     }
-    .cont-pres-text .cont-pres-izq .btn-cv{
-        margin-right: 0px;
+    *{
+        box-sizing: content-box;
     }
 }
