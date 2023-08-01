@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Poppins:wght@200;500&display=swap');
 :root{
     --PCOscuro: #222;
     --SCOscuro: #393939;
@@ -119,6 +119,27 @@ a.active,a:hover{
 .presentacion .contenido .izq .btn-linkin{
     border-color: var(--PCCeleste);
     color: var(--PCCeleste);
+}
+.presentacion .contenido .izq .btn-linkin a{
+    text-decoration: none;
+    color: var(--PCCeleste);
+}
+/*
+    ===========================
+    SOBRE MÍ
+    ===========================
+*/
+.sobre-mi .izq span{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.sobre-mi .izq a{
+    text-decoration: none;
+}
+.sobre-mi .der{
+    font-weight: 400;
+    font-size: 30px;
 }
 @media (max-width: 952px){
     label.logo{
