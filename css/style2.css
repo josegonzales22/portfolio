@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Poppins:wght@200;500&family=Rubik:wght@500&display=swap');
 :root{
     --PCOscuro: #222;
     --SCOscuro: #393939;
@@ -194,7 +194,28 @@ a.active,a:hover{
     HABILIDADES
     ===========================
 */
+.item{
+    background: var(--SCOscuro);
+    box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
+    height: 25vh;
+    color: var(--PCCeleste);
+}
+.item:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: .5s;
+}
+.item img{filter: invert(64%) sepia(40%) saturate(2701%) hue-rotate(167deg) brightness(101%) contrast(87%);}
 
+.item img, .item svg{
+    height: 16vh;
+    width: 85px;
+}
+.item.cplusplus span{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+}
 @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -255,5 +276,9 @@ a.active,a:hover{
     }
     .dato-educacion{
         font-size: 4.5vw;
+    }
+
+    .item.cplusplus span{
+        font-size: 6vh;       
     }
 }
