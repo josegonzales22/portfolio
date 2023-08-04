@@ -1,30 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Poppins:wght@200;500&family=Rubik:wght@500&display=swap');
+:root{
+    --PCOscuro: #222;
+    --SCOscuro: #393939;
+    --PCBlanco: #DADCDD;
+    --PCCeleste: #36B7EE;
+    --SCNaranja: #CA5A08;
+    --SCMostaza: #CA8808;
+    --SCVerde: #19C30A;
+    --SCCeleste: #34ABDD;
+    --SCMorado: #5C13BA;
+    --SCAmarillo: #CAB708;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    background-color: #222222;
-    color: #DADCDD;
+    background-color: var(--PCOscuro);
+    color: var(--PCBlanco);
+}
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--PCCeleste);
 }
 /*
-===================
-Barra de navegación
-===================
+    ===========================
+    BARRA DE NAVEGACIÓN
+    ===========================
 */
 nav{
     background: rgba(0, 0, 0, 0.75);
     display: block;
-    position: fixed;
+    position: relative;
     height: 80px;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     padding-left: 50px;
 }
 label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
-    /*padding: 0 100px;*/
     font-weight: bold;
 }
 nav ul{
@@ -39,7 +55,6 @@ nav ul li{
 nav ul li a{
     color: white;
     font-size: 17px;
-    /*padding: 7px 13px;*/
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -61,69 +76,181 @@ a.active,a:hover{
     display: none;
 }
 /*
-===================
-Presentación
-===================
+    ===========================
+    PRESENTACIÓN
+    ===========================
 */
-.presentation-video{
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.presentacion{
+    overflow: hidden;
+    width: 100vw;
+    height: 90vh;
 }
-.presentation-video video{
-    filter: brightness(35%);
+.presentacion video{
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(53%);
 }
-.cont-pres-text{
-    color: white;
+.presentacion .contenido{
+    position: relative;
+    z-index: 2;
 }
-.cont-pres-text .row{
-    width: auto;
-    height: 100vh;
-}
-.cont-pres-text .row{
-    margin: 0px 35px;
-}
-.cont-pres-izq h1{
+.presentacion .contenido .izq h1{
     font-weight: 500;
     font-size: 65px;
 }
-.ape{
-    color: #36b7ee;
+.presentacion .contenido .izq .ape{
+    color: var(--PCCeleste);
 }
-.cont-pres-izq .desarrollador{
+.presentacion .contenido .izq .desarrollador{
     font-weight: 200;
     font-size: 28px;
 }
-.cont-pres-text .cont-pres-izq .btn-cv,
-.cont-pres-text .cont-pres-izq .btn-linkin{
+.presentacion .contenido .izq .btn-cv,
+.presentacion .contenido .izq .btn-linkin{
     height: 59px;
     font-size: 25px;
 }
-.cont-pres-text .cont-pres-izq .btn-cv{
-    background-color: #36b7ee;
+.presentacion .contenido .izq .btn-cv{
+    background-color: var(--PCCeleste);
     color: white;
     width: 145px;
     margin-right: 5px;
 }
-.cont-pres-text .cont-pres-izq .btn-linkin{
-    border-color: #36b7ee;
-    color: #f5f5f5;
+.presentacion .contenido .izq .btn-linkin{
+    border-color: var(--PCCeleste);
+    color: var(--PCCeleste);
 }
-.animation1{
-    width: 50vw;
-    z-index: 0;
+.presentacion .contenido .izq .btn-linkin a{
+    text-decoration: none;
+    color: var(--PCCeleste);
 }
-.cont-acerca-mi{
-    background-color: #222222;
-    padding: 100px 50px;
+/*
+    ===========================
+    SOBRE MÍ
+    ===========================
+*/
+.sobre-mi .izq span{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
 }
-.animation2{
-    width: 25vw;
-    z-index: 0;
+.sobre-mi .izq a{
+    text-decoration: none;
+}
+.sobre-mi .izq .animation2{
+    width: 90%;
+}
+.sobre-mi .der{
+    font-weight: 400;
+    font-size: 35px;
+}
+/*
+    ===========================
+    EDUCACIÓN
+    ===========================
+*/
+.contenedor-largo{
+    background-color: var(--SCOscuro);
+    box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
+}
+.edu1 .img-upn img,
+.edu2 .img-upc img{
+    width: 150px;
+    height: 30vh;
+}
+.edu1 .img-upn img,
+.edu2 .img-upc img,
+.contenedor-largo img{
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.35) inset;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.50) inset, -10px 10px 4px 0px rgba(0, 0, 0, 0.30);
+}
+.edu1 .img-upn img{
+    background-color: #FDBA30;
+}
+.edu2 .img-upc img{
+    filter: lightgray 50%;
+}
+.fecha-educacion{
+    border-radius: 15px;
+    padding: 6px 20px;
+    background: var(--SCCeleste);
+    font-size: 30px;
+}
+.tema-educacion{
+    font-weight: 400;
+    font-size: 35px;
+}
+.dato-educacion{
+    font-weight: 200;
+    font-size: 25px;
+}
+/*
+    ===========================
+    HABILIDADES
+    ===========================
+*/
+.item{
+    background: var(--SCOscuro);
+    box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
+    height: 25vh;
+    color: var(--PCCeleste);
+}
+.item:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: .5s;
+}
+.item img{filter: invert(64%) sepia(40%) saturate(2701%) hue-rotate(167deg) brightness(101%) contrast(87%);}
+
+.item img, .item svg{
+    height: 16vh;
+    width: 85px;
+}
+.item.cplusplus span{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+}
+img.img-certificacion{
+    width: 180px;
+}
+.card-cert{
+    height: 46vh;
+}
+.card-cert{
+    background-color: var(--SCOscuro);
+    color: whitesmoke;
+}
+.card-cert a{
+    text-decoration: none;
+}
+.img-card{
+    background-color: #E1E1E1;
+    height: 180px;   
+}
+.btn-certificacion{
+    background-color: #36b7ee;
+    color: whitesmoke;
+    padding: 10px;
+}
+.btn-certificacion:hover{
+    background-color: #36b7ee;
+    color: rgb(90, 90, 246);
+}
+.etiqueta-certificacion {
+    font-weight: 200;
+    font-size: 15px;
+}
+.certificacion{
+    background-color: #CA5A08;
+}
+.carta{
+    background-color: #CA8808;
 }
 @media (max-width: 952px){
     label.logo{
@@ -134,61 +261,60 @@ Presentación
     }
 }
 @media (max-width: 858px){
-/*
-===================
-Navegación
-===================
-*/
+    /*
+    ===========================
+    BARRA DE NAVEGACIÓN
+    ===========================
+    */
     .checkbtn{
-      display: block;
-    }
+        display: block;
+      }
     ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.75);
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.75);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
     }
     nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
     nav ul li a{
-      font-size: 20px;
+        font-size: 20px;
     }
     a:hover,a.active{
-      background: none;
-      color: #0082e6;
+        background: none;
+        color: #0082e6;
     }
     #check:checked ~ ul{
-      left: 0;
+        left: 0;
     }
-/*
-===================
-Presentación
-===================
-*/
+    /*
+    ===========================
+    PRESENTACIÓN
+    ===========================
+    */
     .animation1{
         display: none;
     }
-    .cont-pres-izq h1{
-        text-align: center;
+
+    .fecha-educacion{
+        padding: 6px 10px;
+        font-size: 4vw;
     }
-    .cont-pres-izq .desarrollador{
-        justify-content: center;
-        display: flex;
+    .tema-educacion{
+        font-size: 5.5vw;
     }
-    .cont-pres-text .cont-pres-izq .btn-cv,
-    .cont-pres-text .cont-pres-izq .btn-linkin{
-        display: block;
-        margin: 20px auto;
-        width: 90%;
+    .dato-educacion{
+        font-size: 4.5vw;
     }
-    *{
-        box-sizing: content-box;
+
+    .item.cplusplus span{
+        font-size: 6vh;       
     }
 }
