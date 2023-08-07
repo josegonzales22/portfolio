@@ -18,16 +18,21 @@ body {
     background-color: var(--PCOscuro);
     color: var(--PCBlanco);
 }
+a{
+    text-decoration: none;
+    color: var(--PCBlanco);
+}
 h2{
     font-weight: 400;
     font-size: 40px;
     color: var(--PCCeleste);
 }
-/*
-    ===========================
-    BARRA DE NAVEGACIÓN
-    ===========================
-*/
+footer{
+    background-color: var(--SCOscuro);
+}
+footer p, footer span{
+    font-weight: 200;    
+}
 nav{
     background: rgba(0, 0, 0, 0.75);
     display: block;
@@ -75,11 +80,6 @@ a.active,a:hover{
 #check{
     display: none;
 }
-/*
-    ===========================
-    PRESENTACIÓN
-    ===========================
-*/
 .presentacion{
     overflow: hidden;
     width: 100vw;
@@ -103,7 +103,7 @@ a.active,a:hover{
     font-weight: 500;
     font-size: 65px;
 }
-.presentacion .contenido .izq .ape{
+.ape{
     color: var(--PCCeleste);
 }
 .presentacion .contenido .izq .desarrollador{
@@ -129,11 +129,6 @@ a.active,a:hover{
     text-decoration: none;
     color: var(--PCCeleste);
 }
-/*
-    ===========================
-    SOBRE MÍ
-    ===========================
-*/
 .sobre-mi .izq span{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
@@ -149,11 +144,6 @@ a.active,a:hover{
     font-weight: 400;
     font-size: 35px;
 }
-/*
-    ===========================
-    EDUCACIÓN
-    ===========================
-*/
 .contenedor-largo{
     background-color: var(--SCOscuro);
     box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
@@ -189,11 +179,6 @@ a.active,a:hover{
     font-weight: 200;
     font-size: 25px;
 }
-/*
-    ===========================
-    HABILIDADES
-    ===========================
-*/
 .item{
     background: var(--SCOscuro);
     box-shadow: -8px 6px 4px 0px rgba(0, 0, 0, 0.35);
@@ -252,6 +237,67 @@ img.img-certificacion{
 .carta{
     background-color: #CA8808;
 }
+.etiqueta{
+    font-weight: 200;
+    font-size: 15px;
+    padding: .4vh;
+}
+.etiqueta.spring{
+    background-color: #19C30A;
+}
+.etiqueta.html{
+    background-color: #CA5A08;
+}
+.etiqueta.css{
+    background-color: #34ABDD;
+}
+.etiqueta.bootstrap{
+    background-color: #5C13BA;
+}
+.etiqueta.javascript{
+    background-color: #CAB708;
+}
+img.img-portfolio{
+    width: 160px;
+    filter: invert(63%) sepia(61%) saturate(1315%) hue-rotate(167deg) brightness(95%) contrast(97%);
+}
+.card-footer{
+    border-top: none;
+}
+.card-header{
+    border-bottom: none;
+}
+.carta-portfolio{
+    background-color: var(--SCOscuro);
+    color: whitesmoke;
+    height: 380px;
+}
+.contacto1{
+    font-size: 32px;
+}
+.medio-contacto{
+    color: var(--PCBlanco);
+    font-weight: 200;
+    font-size: 20px;
+}
+.form-group .form-control{
+    background-color: var(--SCOscuro);
+    border: none;
+    border-radius: 3px;
+    color: var(--PCBlanco);
+}
+.form-control::placeholder{
+    color: var(--PCBlanco);
+}
+.btnContacto {
+    background-color: var(--SCCeleste);
+    color: var(--PCBlanco);
+    width: 229px;
+}
+.btnContacto:hover{
+    background-color: #36b7ee;
+    color: rgb(90, 90, 246);
+}
 @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -261,11 +307,6 @@ img.img-certificacion{
     }
 }
 @media (max-width: 858px){
-    /*
-    ===========================
-    BARRA DE NAVEGACIÓN
-    ===========================
-    */
     .checkbtn{
         display: block;
       }
@@ -294,11 +335,6 @@ img.img-certificacion{
     #check:checked ~ ul{
         left: 0;
     }
-    /*
-    ===========================
-    PRESENTACIÓN
-    ===========================
-    */
     .animation1{
         display: none;
     }
@@ -316,5 +352,11 @@ img.img-certificacion{
 
     .item.cplusplus span{
         font-size: 6vh;       
+    }
+    .input-nombre{
+        margin-right: 5px;
+    }
+    .box{
+        margin-bottom: 40px;
     }
 }

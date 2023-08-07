@@ -6,6 +6,7 @@
     <meta name="description" content="Author: Jose Gonzales Lamas, Illustrator: LottieFiles, fontawesome, Royalty Free Footages, Category: Portfolio">
     <meta name="robots" content="portfolio, jose gonzales lamas, developer">
     <meta name="googlebot" content="portfolio, jose gonzales lamas, developer">
+    <link rel="shortcut icon" href="img/otros/icono.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,32 +15,22 @@
     <title>José Gonzales | Portfolio</title>
 </head>
 <body>
-    <!--
-        ====================================
-        BARRA DE NAVEGACIÓN
-        ====================================
-    -->
-    <nav class="col-lg-12 col-md-12 fs-1">
+    <nav class="col-lg-12 col-md-12">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Jose<span class="ape">g</span></label>
+        <label class="logo"><i class="fa-solid fa-code" style="color: #36b7ee;"></i>Jose<span class="ape">g</span></label>
         <ul>
-          <li><a class="active" href="#inicio">Inicio</a></li>
-          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#certificaciones">Certificaciones</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    <!--
-        ====================================
-        Pantalla principal
-        ====================================
-    -->
-    <div class="container presentacion">
+    <div class="container presentacion" id="inicio">
         <video class="fillWidth visible-lg" preoload autoplay muted loop>
             <source src="https://splendorous-shortbread-b59801.netlify.app/assets/mp4/background-video.mp4?autoplay=1" type="video/mp4">
             Tu navegador no soporta la etiqueta HTML5 video.
@@ -67,12 +58,7 @@
             </div>
         </div>
     </div>
-    <!--
-        ====================================
-        Sobre mí
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
+    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center" id="sobre-mi">
         <h2><i class="fa-solid fa-diagram-project" style="color: #36b7ee;"></i> Sobre mí</h2>
     </div>
     <div class="row g-2 p-3 align-items-center sobre-mi">
@@ -95,12 +81,6 @@
             Me considero una persona con la capacidad de trabajar en equipo, flexible al cambio y comprometido con la excelencia.
         </div>
     </div>
-    
-    <!--
-        ====================================
-        Educación
-        ====================================
-    -->
     <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
         <h2><i class="fa-solid fa-school" style="color: #36b7ee;"></i> Educación</h2>
     </div>
@@ -130,12 +110,6 @@
             </div>
         </div>
     </div>
-    
-    <!--
-        ====================================
-        Experiencia
-        ====================================
-    -->
     <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
         <h2><i class="fa-solid fa-laptop-code" style="color: #36b7ee;"></i> Experiencia</h2>
     </div>
@@ -149,17 +123,15 @@
                 <br><br>
                 <span class="tema-educacion">Educador voluntario - Área de Proyectos</span>
                 <br><br>
-                <span class="dato-educacion">Prácticas Pre - Progresemos Juntos</span>
+                <span class="dato-educacion">
+                    Prácticas Pre - Progresemos Juntos
+                    <br>
+                    <a href="https://drive.google.com/file/d/1X__9LP1Y-SueZukxyx7u1v3xkIQA5odB/view?usp=sharing"><i class="fa-solid fa-file-pdf"></i></a>
+                </span>
             </div>
         </div>
     </div>
-    
-    <!--
-        ====================================
-        Habilidades
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
+    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center" id="habilidades">
         <h2><i class="fa-solid fa-code" style="color: #36b7ee;"></i> Habilidades</h2>
     </div>
     <div class="container mb-3">
@@ -397,12 +369,6 @@
             </div>
         </div>
     </div>
-
-    <!--
-        ====================================
-        Ofimática
-        ====================================
-    -->
     <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
         <h2><i class="fa-solid fa-computer" style="color: #36b7ee;"></i> Ofimática</h2>
     </div>
@@ -497,263 +463,316 @@
             </div>
         </div>
     </div>
-
-    <!--
-        ====================================
-        Certificaciones
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
+    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center" id="certificaciones">
         <h2><i class="fa-solid fa-certificate" style="color: #36b7ee;"></i> Certificaciones y cartas</h2>
     </div>
     <div class="container mb-3">
         <div class="row g-3 p-3 align-items-center">
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-oneoracle d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/oneoracle.png" alt="Card image cap">
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Ruta Backend</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Ruta Backend</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://app.aluracursos.com/user/jose-gonzales-2084/fullCertificate/15482019429573b1c8bea5307b086ad4" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://app.aluracursos.com/user/jose-gonzales-2084/fullCertificate/15482019429573b1c8bea5307b086ad4" class="btn-certificacion rounded">Ver certificación</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-cibertec d-flex align-items-center justify-content-center img-card">
-                        <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/ciberteclogo.png">    
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
+                        <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/ciberteclogo.png">
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Community Manager</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Community Manager</h5>
                     </div>
-                    <div class="text-center">
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
                         <a target="_blank" href="https://drive.google.com/file/d/1gOBL2wNRPlCkyWWGDFXiv1sCBztsA7YR/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-cisco d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
+                        <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo-Cisco.png">
+                    </div>
+                    <div class="card-body">
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Programming Essentials in Python</h5>
+                    </div>
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/file/d/1BAowJrF3SmdxCBWRX7XRrO_BvsHJXXcI/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo-Cisco.png">    
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Programming Essentials in Python</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">CCNA INTRODUCCIÓN A REDES</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://drive.google.com/file/d/1BAowJrF3SmdxCBWRX7XRrO_BvsHJXXcI/view?usp=share_link" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/drive/folders/10LU0V2OO1fwvxZblPVzcXGaYGAcn4gU5?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-cisco d-flex align-items-center justify-content-center img-card">
-                        <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo-Cisco.png">    
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
+                        <img class="img-certificacion card-img-top" src="https://cybersecurity-excellence-awards.com/wp-content/uploads/2021/01/517564-200x28.png">
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                            <span class="etiqueta-certificacion carta rounded p-1 text-white">Carta</span>
-                        </div>
-                        <h5 class="card-title mt-2">CCNA INTRODUCCIÓN A REDES</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Information Security Awareness</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://drive.google.com/drive/folders/10LU0V2OO1fwvxZblPVzcXGaYGAcn4gU5?usp=share_link" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/file/d/1EQakrbLZATKQy9kpKOHmm-fMqn3QsEms/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-fortinet d-flex align-items-center justify-content-center img-card">
-                        <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/fortinetlogo.png">    
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Information Security Awareness</h5>
-                    </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://drive.google.com/file/d/1EQakrbLZATKQy9kpKOHmm-fMqn3QsEms/view?usp=share_link" class="btn-certificacion rounded">Ver certificación</a>    
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-telefonica d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo_CE2.png">    
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Office intermedio</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Office intermedio</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://drive.google.com/drive/folders/12KA21_KelOTNWLJ4qOlvJEbGjVnjwFXa?usp=share_link" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/drive/folders/12KA21_KelOTNWLJ4qOlvJEbGjVnjwFXa?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-telefonica d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo_CE2.png">    
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Diseño web con HTML5 + CSS</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Diseño web con HTML5 + CSS</h5>
                     </div>
-                    <div class="text-center">
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
                         <a target="_blank" href="https://drive.google.com/file/d/1lPM07ByM2asD57rreYAbssgnEtYibEWy/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-telefonica d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo_CE2.png">
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Programación con JavaScript</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Programación con JavaScript</h5>
                     </div>
-                    <div class="text-center">
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
                         <a target="_blank" href="https://drive.google.com/file/d/1lyX5EPgyedGV5dkAs68DMryLIbRExbJ1/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
-                    <div class="img-telefonica d-flex align-items-center justify-content-center img-card">
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo_CE2.png">
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Principios básicos del internet de las cosas</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Principios básicos del internet de las cosas</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://drive.google.com/file/d/1kxiSKB7TSCqomTaqClPuPA2rABtUM6Fp/view?usp=share_link" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/file/d/1kxiSKB7TSCqomTaqClPuPA2rABtUM6Fp/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
+                <div class="card carta-portfolio">
                     <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/LinkedIn_Learning_Logo.png">    
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Fundamentos de la carrera de administración de sistemas</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Fundamentos de la carrera de administración de sistemas</h5>
                     </div>
-                    <div class="text-center">
-                        <a target="_blank" href="https://www.linkedin.com/learning/certificates/4b671595dfc570f7b5ada5a830bcae0887a035c011a6baad2ed42c23373b3976?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B%2Frlf%2BF%2FCRUq816cdF0pqVg%3D%3D" class="btn-certificacion rounded">Ver certificación</a>    
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://drive.google.com/file/d/1ceUlTjxOLQh3SUdtS45AmYGhrmc4i-Sa/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="card-cert pb-4 card">
+                <div class="card carta-portfolio">
                     <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
                         <img class="img-certificacion card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/LinkedIn_Learning_Logo.png">    
                     </div>
                     <div class="card-body">
-                        <div>
-                            <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
-                        </div>
-                        <h5 class="card-title mt-2">Fundamentos profesionales del análisis de datos</h5>
+                        <span class="etiqueta-certificacion certificacion rounded p-1 text-white">Certificación</span>
+                        <h5 class="card-title mt-3">Fundamentos profesionales del análisis de datos</h5>
                     </div>
-                    <div class="text-center">
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
                         <a target="_blank" href="https://drive.google.com/file/d/1HijSDbDZt5Go0Q0EfzUDgBXoCJs8msZq/view?usp=sharing" class="btn-certificacion rounded">Ver certificación</a>    
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--
-        ====================================
-        Portfolio
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
+    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center" id="portfolio">
         <h2><i class="fa-solid fa-briefcase" style="color: #36b7ee;"></i> Portfolio</h2>
     </div>
     <div class="container mb-3">
         <div class="row g-3 p-3 align-items-center">
             <div class="col-lg-4 col-md-12">
-                <div class="pt-3 pb-3 bg-light text-center">
-                    Gestor de inventario para una ferreteria
+                <div class="card carta-portfolio">
+                    <div class="img-linkedin d-flex align-items-center justify-content-center img-card">
+                        <img class="img-portfolio card-img-top" src="https://sweet-daifuku-be8266.netlify.app/assets/img/svg/store-solid.svg">    
+                    </div>
+                    <div class="card-header mt-2">
+                        <span class="etiqueta spring rounded text-white">Spring boot</span>
+                        <span class="etiqueta html rounded text-white">Html</span>
+                        <span class="etiqueta css rounded text-white">Css</span>
+                        <span class="etiqueta bootstrap rounded text-white">Bootstrap</span>
+                        <span class="etiqueta javascript rounded text-white">Javascript</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gestor de inventario para una ferreteria</h5>
+                    </div>
+                    <div class="card-footer bg-transparent pt-4 pb-4 text-center">
+                        <a target="_blank" href="https://github.com/josegonzales22" class="btn-certificacion rounded">Ver más</a>    
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="pt-3 pb-3 bg-light text-center">
+                <div class="card card-cert carta-portfolio d-flex justify-content-center align-items-center">
                     Próximamente
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="pt-3 pb-3 bg-light text-center">
+                <div class="card card-cert carta-portfolio d-flex justify-content-center align-items-center">
                     Próximamente
                 </div>
             </div>
         </div>
     </div>
-
-    <!--
-        ====================================
-        Contacto
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center">
+    <div class="col-lg-12 col-md-12 p-4 fs-2 text-center" id="contacto">
         <h2><i class="fa-solid fa-file-signature" style="color: #36b7ee;"></i> Contacto</h2>
         <span class="fs-5">¿Te gustaría contactarme?</span>
     </div>
     <div class="container mb-3">
-        <div class="row g-3 p-3 align-items-center">
+        <div class="row g-2 p-3 align-items-center">
             <div class="col-lg-6 col-md-12">
-                <div class="pt-3 pb-3 bg-light text-center">
-                    Medios de contacto
+                <div class="pt-3 pb-3 contacto1">
+                    <p>Jose<span class="ape">g</span></p>
+                    <span class="mt-4">
+                        <a href="">
+                            <p class="medio-contacto"><i class="fa-brands fa-whatsapp fa-sm" style="color: #36b7ee;"></i> Whatsapp</p>
+                        </a>
+                        <a href="">
+                            <p class="medio-contacto"><i class="fa-regular fa-envelope fa-sm" style="color: #36b7ee;"></i> Correo</p>
+                        </a>
+                        <a href="">
+                            <p class="medio-contacto"><i class="fa-brands fa-linkedin-in fa-sm" style="color: #36b7ee;"></i> Linkedin</p>
+                        </a>
+                    </span>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
-                <div class="pt-3 pb-3 bg-light text-center">
-                    Formulario
+                <div class="pt-3 pb-3 text-center contacto2">
+                    <p>Por favor, completa el formulario</p>
+                    <div class="container">
+                        <div class="row g-2 mb-3">
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control" placeholder="Tu nombre*">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control" placeholder="Tu correo*">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" placeholder="Asunto*">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <textarea class="form-control" placeholder="Mensaje*" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btnContacto">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--
-        ====================================
-        Footer | Copyright
-        ====================================
-    -->
-    <div class="col-lg-12 col-md-12 bg-primary p-3 fs-6 text-center">
-        COPYRIGHT © 2023 José Gonzales Lamas
-    </div>
-
-    <!--
-        ====================================
-        Archivos JavaScript
-        ====================================
-    -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 box">
+                    <h6 class="mb-3">Iconos</h6>
+                    <a href="https://fontawesome.com/icons">
+                        <p>
+                        <img width="18" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Font_Awesome_logomark_blue.svg/512px-Font_Awesome_logomark_blue.svg.png">
+                         Font Awesome
+                        </p>
+                    </a>
+                    <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                        <p>
+                        <img width="18" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/669px-Commons-logo.svg.png">
+                         Wikipedia Commons
+                        </p>
+                    </a>
+                    <a href="https://spring.io/">
+                        <p>
+                        <img width="18" src="https://spring.io/img/favicon.ico">
+                         Spring
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-12 box">
+                    <h6 class="mb-3">Animaciones</h6>
+                    <a href="https://lottiefiles.com/categories/animations">
+                        <p>
+                        <img width="18" src="img/otros/lottiefiles.png">
+                         LottieFiles
+                        </p>
+                    </a>
+                    <a href="https://royaltyfreefootages.com/">
+                        <p>
+                        <img width="18" src="https://royaltyfreefootages.com/images/1629895325555_Royalty%20Free%20Footages%20Logo.png">
+                         Royalty Free Footages
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-12 box">
+                    <h6 class="mb-3">Imágenes</h6>
+                    <a href="https://cybersecurity-excellence-awards.com/candidates/fortinet-network-security-expert-nse-certification-program-2/">
+                        <p>
+                        <img width="18" src="img/otros/Cybersecurity-Awards_logo-480 (1).png">
+                         Cybersecurity Excellence Awards
+                        </p>
+                    </a>
+                    <a href="https://conectaempleo-formacion.fundaciontelefonica.com/">
+                        <p>
+                        <img width="18" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/logo_CE2.png">
+                         Conecta Empleo
+                        </p>
+                    </a>
+                    <a href="https://en.ufm.edu/alumnos/linkedin-learning/">
+                        <p>
+                        <img width="18" src="https://sweet-daifuku-be8266.netlify.app/assets/img/company/LinkedIn_Learning_Logo.png">
+                         Universidad Francisco Marroquín
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-5 text-center">
+                <span>Copyright © 2023 José Gonzales Lamas</span>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/script.js"></script>
