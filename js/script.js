@@ -1,8 +1,7 @@
-/*
-    ====================================
-    HTML
-    ====================================
-*/
+window.onload=function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
 function enterskillhtml() {
     document.getElementById("html").style.backgroundColor="#ff8c00";
     document.getElementById("imghtml").style.filter="invert(100%) sepia(4%) saturate(24%) hue-rotate(247deg) brightness(116%) contrast(92%)";
@@ -13,11 +12,6 @@ function outskillhtml() {
     document.getElementById("imghtml").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("html").style.color="#36b7ee";
 }
-/*
-    ====================================
-    CSS
-    ====================================
-*/
 function enterskillcss() {
     document.getElementById("css").style.color="#f5f5f5";
     document.getElementById("css").style.backgroundColor="#004CE8";
@@ -28,11 +22,6 @@ function outskillcss() {
     document.getElementById("imgcss").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("css").style.color="#36b7ee";
 }
-/*
-    ====================================
-    Javascript
-    ====================================
-*/
 function enterskilljs() {
     document.getElementById("js").style.color="#f5f5f5";
     document.getElementById("js").style.backgroundColor="#000";
@@ -43,11 +32,6 @@ function outskilljs() {
     document.getElementById("imgjs").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("js").style.color="#36b7ee";
 }
-/*
-    ====================================
-    C++
-    ====================================
-*/
 function enterskillcplus() {
     document.getElementById("c++").style.color="#f5f5f5";
     document.getElementById("c++").style.backgroundColor="#262C3A";
@@ -58,11 +42,6 @@ function outskillcplus() {
     document.getElementById("imgcplus").style.color="#36b7ee";
     document.getElementById("c++").style.color="#36b7ee";
 }
-/*
-    ====================================
-    Java
-    ====================================
-*/
 function enterskilljava() {
     document.getElementById("java").style.color="#f5f5f5";
     document.getElementById("java").style.backgroundColor="#E51837";
@@ -73,11 +52,6 @@ function outskilljava() {
     document.getElementById("imgjava").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("java").style.color="#36b7ee";
 }
-/*
-    ====================================
-    Spring boot
-    ====================================
-*/
 function enterskillsb() {
     document.getElementById("spring-boot").style.color="#f5f5f5";
     document.getElementById("spring-boot").style.backgroundColor="#262C3A";
@@ -90,11 +64,6 @@ function outskillsb() {
     document.getElementById("sb2").style.fill="#ffffff";
     document.getElementById("spring-boot").style.color="#36b7ee";
 }
-/*
-    ====================================
-    php
-    ====================================
-*/
 function enterskillphp() {
     document.getElementById("php").style.color="#f5f5f5";
     document.getElementById("php").style.backgroundColor="#000";
@@ -105,11 +74,6 @@ function outskillphp() {
     document.getElementById("imgphp").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("php").style.color="#36b7ee";
 }
-/*
-    ====================================
-    Bootstrap
-    ====================================
-*/
 function enterskillbootstrap() {
     document.getElementById("bootstrap").style.color="#f5f5f5";
     document.getElementById("bootstrap").style.backgroundColor="#7310F5";
@@ -120,11 +84,6 @@ function outskillbootstrap() {
     document.getElementById("imgbootstrap").style.filter="invert(59%) sepia(95%) saturate(954%) hue-rotate(166deg) brightness(96%) contrast(94%)";
     document.getElementById("bootstrap").style.color="#36b7ee";
 }
-/*
-    ====================================
-    mysql
-    ====================================
-*/
 function enterskillmysql() {
     document.getElementById("mysql").style.color="#f5f5f5";
     document.getElementById("mysql").style.backgroundColor="#4479A1";
@@ -137,11 +96,6 @@ function outskillmysql() {
     document.getElementById("imgmysql2").style.fill="#36b7ee";
     document.getElementById("mysql").style.color="#36b7ee";
 }
-/*
-    ====================================
-    MS Sql Server
-    ====================================
-*/
 function enterskillsqlserver() {
     document.getElementById("mssqlserver").style.color="#000";
     document.getElementById("mssqlserver").style.backgroundColor="#C9C9C9";
@@ -167,11 +121,6 @@ function outskillsqlserver() {
 
     document.getElementById("mssqlserver").style.color="#36b7ee";
 }
-/*
-    ====================================
-    Oracle
-    ====================================
-*/
 function enterskilloracle() {
     document.getElementById("oracle").style.color="#f5f5f5";
     document.getElementById("oracle").style.backgroundColor="#E32124";
@@ -182,11 +131,6 @@ function outskilloracle() {
     document.getElementById("oracle").style.color="#36b7ee";
     document.getElementById("oracle0").style.fill="#36b7ee";
 }
-/*
-    ====================================
-    Visual Studio
-    ====================================
-*/
 function enterskillvs() {
     document.getElementById("visualstudio").style.color="#f5f5f5";
     document.getElementById("visualstudio").style.backgroundColor="#2C2C32";
@@ -201,11 +145,6 @@ function outskillvs() {
     document.getElementById("vs1").style.fill="#36b7ee";
     document.getElementById("vs2").style.fill="#36b7ee";
 }
-/*
-    ====================================
-    Eclipse
-    ====================================
-*/
 function enterskilleclipse() {
     document.getElementById("eclipse").style.color="#f5f5f5";
     document.getElementById("eclipse").style.backgroundColor="#585858";
@@ -232,11 +171,6 @@ function outskilleclipse() {
     document.getElementById("degraE").style.stopColor="#36b7ee";
     document.getElementById("degraF").style.stopColor="#36b7ee";
 }
-/*
-    ====================================
-    Windows Server
-    ====================================
-*/
 function enterskillws() {
     document.getElementById("ws").style.color="#00188f";
     document.getElementById("ws").style.backgroundColor="#C9C9C9";
